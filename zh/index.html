@@ -202,12 +202,18 @@
       text-transform: uppercase;
     }
     .s-cover .cover-logo {
-      font-family: 'SF Pro Display', -apple-system, system-ui, sans-serif;
-      font-size: 32px; font-weight: 700;
-      letter-spacing: -0.02em;
-      color: var(--fg-strong);
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      line-height: 1;
     }
-    .s-cover .cover-logo .dot { color: var(--accent); }
+    .official-dinq-logo {
+      display: block;
+      width: auto;
+      height: 84px;
+      object-fit: contain;
+    }
+    .s-closing .official-dinq-logo { height: 76px; }
     .s-cover .cover-main {
       display: flex; flex-direction: column; gap: 40px;
     }
@@ -1316,7 +1322,7 @@
         <span class="corner-dot br"></span>
         <div class="cover-inner">
           <div class="cover-top">
-            <div class="cover-logo">DINQ<span class="dot">.</span></div>
+            <div class="cover-logo"><img class="official-dinq-logo" src="../logos/logo-dinq-official.svg" alt="DINQ 官方 logo"></div>
             <div>2026 · 产品介绍</div>
           </div>
           <div class="cover-main">
@@ -2738,7 +2744,7 @@
         <span class="corner-dot br"></span>
         <div class="closing-inner">
           <div class="cover-top" style="display: flex; justify-content: space-between; align-items: center; font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 14px; letter-spacing: 0.22em; color: var(--muted); text-transform: uppercase;">
-            <div style="font-family: 'SF Pro Display', system-ui, sans-serif; font-size: 28px; font-weight: 700; letter-spacing: -0.02em; color: var(--fg-strong); text-transform: none;">DINQ<span style="color: var(--accent);">.</span></div>
+            <div><img class="official-dinq-logo" src="../logos/logo-dinq-official.svg" alt="DINQ 官方 logo"></div>
             <div>11 · Conclusion · 总结与展望</div>
           </div>
           <div class="closing-main">
