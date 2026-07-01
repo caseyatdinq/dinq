@@ -210,13 +210,18 @@
       text-transform: uppercase;
     }
     .s-cover .cover-logo {
-      font-family: var(--font-display);
-      font-size: 86px; font-weight: 760;
-      letter-spacing: -0.045em;
-      color: var(--fg-strong);
-      line-height: 0.9;
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      line-height: 1;
     }
-    .s-cover .cover-logo .dot { color: var(--accent); }
+    .official-dinq-logo {
+      display: block;
+      width: auto;
+      height: 84px;
+      object-fit: contain;
+    }
+    .s-closing .official-dinq-logo { height: 76px; }
     .s-cover .cover-main {
       display: flex; flex-direction: column; gap: 34px;
       transform: translateY(-20px);
@@ -1836,7 +1841,7 @@
         <span class="corner-dot br"></span>
         <div class="cover-inner">
           <div class="cover-top">
-            <div class="cover-logo">DINQ<span class="dot">.</span></div>
+            <div class="cover-logo"><img class="official-dinq-logo" src="../logos/logo-dinq-official.svg" alt="DINQ official logo"></div>
             <div>2026 · Product Introduction</div>
           </div>
           <div class="cover-main">
@@ -3229,7 +3234,7 @@
         <span class="corner-dot br"></span>
         <div class="closing-inner">
           <div class="cover-top" style="display: flex; justify-content: space-between; align-items: center; font-family: var(--font-mono); font-size: 14px; letter-spacing: 0.22em; color: var(--muted); text-transform: uppercase;">
-            <div style="font-family: var(--font-display); font-size: 28px; font-weight: 700; letter-spacing: -0.02em; color: var(--fg-strong); text-transform: none;">DINQ<span style="color: var(--accent);">.</span></div>
+            <div><img class="official-dinq-logo" src="../logos/logo-dinq-official.svg" alt="DINQ official logo"></div>
             <div>11 · Conclusion &amp; Strategic Outlook</div>
           </div>
           <div class="closing-main">
